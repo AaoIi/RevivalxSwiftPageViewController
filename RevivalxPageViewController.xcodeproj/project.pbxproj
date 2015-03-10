@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1684F2251A9DE103009813B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F2241A9DE103009813B3 /* AppDelegate.swift */; };
-		1684F2271A9DE103009813B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F2261A9DE103009813B3 /* ViewController.swift */; };
 		1684F22A1A9DE103009813B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1684F2281A9DE103009813B3 /* Main.storyboard */; };
 		1684F22C1A9DE103009813B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1684F22B1A9DE103009813B3 /* Images.xcassets */; };
 		1684F22F1A9DE103009813B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1684F22D1A9DE103009813B3 /* LaunchScreen.xib */; };
 		1684F23B1A9DE103009813B3 /* RevivalxPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F23A1A9DE103009813B3 /* RevivalxPageViewControllerTests.swift */; };
+		1684F2451A9EB984009813B3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F2441A9EB984009813B3 /* PageViewController.swift */; };
+		1684F2471A9EBA2A009813B3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F2461A9EBA2A009813B3 /* FirstViewController.swift */; };
+		1684F2491A9EBA38009813B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684F2481A9EBA38009813B3 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		1684F21F1A9DE103009813B3 /* RevivalxPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevivalxPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1684F2231A9DE103009813B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1684F2241A9DE103009813B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1684F2261A9DE103009813B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1684F2291A9DE103009813B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1684F22B1A9DE103009813B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1684F22E1A9DE103009813B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1684F2341A9DE103009813B3 /* RevivalxPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevivalxPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1684F2391A9DE103009813B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1684F23A1A9DE103009813B3 /* RevivalxPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevivalxPageViewControllerTests.swift; sourceTree = "<group>"; };
+		1684F2441A9EB984009813B3 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		1684F2461A9EBA2A009813B3 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		1684F2481A9EBA38009813B3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				1684F2241A9DE103009813B3 /* AppDelegate.swift */,
-				1684F2261A9DE103009813B3 /* ViewController.swift */,
 				1684F2281A9DE103009813B3 /* Main.storyboard */,
 				1684F22B1A9DE103009813B3 /* Images.xcassets */,
 				1684F22D1A9DE103009813B3 /* LaunchScreen.xib */,
 				1684F2221A9DE103009813B3 /* Supporting Files */,
+				1684F2441A9EB984009813B3 /* PageViewController.swift */,
+				1684F2461A9EBA2A009813B3 /* FirstViewController.swift */,
+				1684F2481A9EBA38009813B3 /* SecondViewController.swift */,
 			);
 			path = RevivalxPageViewController;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1684F2271A9DE103009813B3 /* ViewController.swift in Sources */,
+				1684F2491A9EBA38009813B3 /* SecondViewController.swift in Sources */,
+				1684F2471A9EBA2A009813B3 /* FirstViewController.swift in Sources */,
 				1684F2251A9DE103009813B3 /* AppDelegate.swift in Sources */,
+				1684F2451A9EB984009813B3 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
