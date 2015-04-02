@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N4r-bR-PCt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N4r-bR-PCt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Page View Controller-->
@@ -23,7 +23,23 @@
                     <view key="view" contentMode="scaleToFill" id="eEK-pt-6xk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-gq-8HJ">
+                                <rect key="frame" x="250" y="275" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HMf-FS-yHV"/>
+                                    <constraint firstAttribute="height" constant="50" id="M0V-r9-gP6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="v9H-gq-8HJ" secondAttribute="centerX" id="71l-TL-X17"/>
+                            <constraint firstAttribute="centerY" secondItem="v9H-gq-8HJ" secondAttribute="centerY" id="CTM-NM-0jG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WzD-Oc-cBn">
                         <barButtonItem key="leftBarButtonItem" title="Setting" id="HpD-y9-0Oh">
@@ -46,7 +62,23 @@
                     <view key="view" contentMode="scaleToFill" id="cfs-5B-4es">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg3-zt-4ii">
+                                <rect key="frame" x="250" y="275" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Km-oe-zi6"/>
+                                    <constraint firstAttribute="width" constant="100" id="PXY-lE-hrP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="eg3-zt-4ii" secondAttribute="centerX" id="48w-sm-f9M"/>
+                            <constraint firstAttribute="centerY" secondItem="eg3-zt-4ii" secondAttribute="centerY" id="bKN-a0-9mu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KrG-at-nq9"/>
                 </viewController>
@@ -57,7 +89,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lJl-4S-foJ">
             <objects>
-                <navigationController storyboardIdentifier="FirstNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Dzz-Je-BEY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FirstNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dzz-Je-BEY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="68c-cb-MEg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -75,7 +107,7 @@
         <!--Navigation Controller-->
         <scene sceneID="syf-Jt-Ofd">
             <objects>
-                <navigationController storyboardIdentifier="SecondNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="LrC-H8-rBj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SecondNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LrC-H8-rBj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aux-rF-Odi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
