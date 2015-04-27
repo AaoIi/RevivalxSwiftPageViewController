@@ -32,7 +32,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         //first view controller = firstViewControllers navigation controller
         if index == 0 {
             
-            return storyBoard.instantiateViewControllerWithIdentifier("FirstNavigatias!Controller") as! UINavigationController
+            return storyBoard.instantiateViewControllerWithIdentifier("FirstNavigationController") as! UINavigationController
             
         }
         
