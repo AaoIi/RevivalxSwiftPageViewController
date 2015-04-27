@@ -20,7 +20,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         
         let startingViewController = self.viewControllerAtIndex(self.index)
         let viewControllers: NSArray = [startingViewController]
-        self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        self.setViewControllers(viewControllers as [AnyObject], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
         
         
@@ -32,14 +32,14 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         //first view controller = firstViewControllers navigation controller
         if index == 0 {
             
-            return storyBoard.instantiateViewControllerWithIdentifier("FirstNavigationController") as UINavigationController
+            return storyBoard.instantiateViewControllerWithIdentifier("FirstNavigatias!Controller") as! UINavigationController
             
         }
         
         //second view controller = secondViewController's navigation controller
         if index == 1 {
             
-            return storyBoard.instantiateViewControllerWithIdentifier("SecondNavigationController") as UINavigationController
+            return storyBoard.instantiateViewControllerWithIdentifier("SecondNavigationController") as! UINavigationController
         }
         
         return nil
@@ -79,11 +79,11 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
     }
     
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController!) -> Int {
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         return self.identifiers.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController!) -> Int {
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
 
